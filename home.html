@@ -1,0 +1,175 @@
+﻿<html>
+<head>
+    <title>Illustrate.</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/png">
+	<link rel="stylesheet" href="style.css">
+</head>    
+
+<body>
+    <div class="header">
+        <!-- Лого сайта, разумеется, кликабельно -->
+        <div class="logo"> 
+            <a href="home.html"><img class="nosel" src="img/logo.png"></a>
+        </div>
+        <div class="aphor"> <!-- Абзац содержится в своём контейнере -->
+            <div class="aphor_t">
+                <i><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b></i>
+            </div>
+        </div>
+        <div class="search_b">
+            <form>
+                <input type="image" class="nosel" src="img/search_b.png">
+            </form>
+        </div>
+        <div class="search_f">
+            <form>
+                <input type="text" class="user" placeholder="SEARCH" />
+            </form>
+        </div>
+        <!-- Ссылки ведут на несозданные страницы (кроме HOME, на которой мы находимся) -->
+        <div class="links">
+            <a href="home.html"><div class="link"><p>HOME/</p></div></a>
+            <a href="about.html"><div class="link"><p>ABOUT/</p></div></a>
+            <a href="art.html"><div class="link"><p>ART/</p></div></a>
+            <a href="work.html"><div class="link"><p>WORK/</p></div></a>
+            <a href="ill.html"><div class="link"><p>ILL/</p></div></a>
+            <a href="blog.html"><div class="link"><p>BLOG/</p></div></a>
+            <a href="contact.html"><div class="link"><p>CONTACT/</p></div></a>
+        </div>
+    </div>
+    
+<!-- Слайдер существует в виде набора форм типа "радио", каждый имеет свои пары кнопок для двух соседних кадров.
+  Я не на 100% разобрался в принципах его работы, но, похоже, это то ещё противоестественное шаманство. Ещё и кнопки вручную были
+  собраны. Потом постараюсь разобраться с JS для таких вещей.
+  На подблоки с кадрами применяется свой подстиль для div, на кнопки - для label. В комплекте со слайдером
+  шла плавная анимация смены кадров. Вот такие дела. -->
+    <div class='slider'>
+        <input type="radio" name="slider1" id="slider1_1" checked="checked">
+        <div>
+            <img class="nosel" src="img/slide1.png">
+        </div>
+        <label for="slider1_3"></label>
+        <label for="slider1_2"></label>
+        
+        <input type="radio" name="slider1" id="slider1_2">
+        <div>
+            <img class="nosel" src='img/slide2.jpg'>
+        </div>
+        <label for="slider1_1"></label>
+        <label for="slider1_3"></label>
+        
+        <input type="radio" name="slider1" id="slider1_3">
+        <div>
+            <img class="nosel" src='img/slide3.jpg' alt=''>
+        </div>
+        <label for="slider1_2"></label>
+        <label for="slider1_1"></label>
+    </div>
+    
+    <div class="paragraph">
+        <p> Recusandae adipisci assumenda, eos pariatur quas non, consectetur incidunt quaerat! Vestibulim consectetur sapiente voluptas nam, repellat soluta tenetur. </p>
+    </div>
+    <div class="subparagraph">
+        <p> Maxime magnam temporibus quos perspiciatis ea similique quis! Voluptatem nemo quidem sint amet exercitationem dolore molestiae hic voluptate ducimus! Incidunt quisquam, maxime ratione! </p>
+    </div>
+    
+    <!-- Сетка псевдокликабельных новостных блоков -->
+    <div class="grid_wrap"> 
+        <div class="block_button">
+            <button class="button lb"></button> 
+            <button class="button rb"></button>
+        </div>
+        <div class="grid_span">
+            <div class="grid_block plain">
+                <div class="block_header">RECENT WORK</div>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam eaque quibusdam veritatis, nihil soluta, explicabo.</p>
+            </div>
+            <div class="grid_block">
+                <img src="img/pic1.png">
+                <hr>
+                <div class="block_text">
+                    <div class="block_header orange">ME SO HUNGRY</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque perferendis quaerat est animi nam! Dolorum, a!</p>
+                </div>
+            </div>
+            <div class="grid_block">
+                <img src="img/pic2.png">
+                <hr>
+                <div class="block_text">
+                    <div class="block_header orange">ART AGAIN</div>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas iure, rem iusto in, ullam esse molestias expedita repellendus id facilis. </p>
+                </div>
+            </div>
+            <div class="grid_block last">
+                <img src="img/pic3.png">
+                <hr>
+                <div class="block_text">
+                    <div class="block_header orange">YEH OK WHATEVER</div>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, amet dolorem inventore aspernatur quibusdam vero. </p>
+                </div>
+            </div>
+        </div>
+        <div class="block_button">
+            <button class="button lb"></button> 
+            <button class="button rb"></button>
+        </div>
+        <div class="grid_span">
+            <div class="grid_block plain">
+                <div class="block_header">FROM THE BLOG</div>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique rerum quisquam ex quas rem?</p>
+            </div>
+            
+            <div class="grid_block">
+                <img src="img/pic4.png">
+                <hr>
+                <div class="block_text">
+                    <div class="block_header orange">KRZYSZTOF NOWAK</div>
+                    <div class="subheader">14TH APRIL</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, libero, dolorum. </p>
+                </div>
+            </div>
+            <div class="grid_block">
+                <img src="img/pic5.png">
+                <hr>
+                <div class="block_text">
+                    <div class="block_header orange">KRZYSZTOF NOWAK</div>
+                    <div class="subheader">9TH APRIL</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, minus ipsum officiis cum obcaecati?</p>
+                </div>
+            </div>
+            <div class="grid_block last">
+                <img src="img/pic6.png">
+                <hr>
+                <div class="block_text">
+                    <div class="block_header orange">KRZYSZTOF NOWAK</div>
+                    <div class="subheader">23RD MARCH</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse modi at sequi!</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="grid_span_double">
+            <div class="grid_block double">
+                <div class="block_text double_t">
+                    <div class="block_header orange">About the Autor</div>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ducimus accusantium veritatis libero! Sapiente, reprehenderit. </p>
+                </div>
+                <div class="block_pic"><img src="img/pic7.png"></div>
+            </div>
+            <div class="grid_block double last">
+                <div class="block_text double_t">
+                    <div class="block_header orange">We'll It's a bloody text box init?</div>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt veritatis a, fuga illum cupiditate! </p>
+                </div>
+                <div class="block_pic black_shad"><img src="img/pic8.png"></div>
+            </div>
+        </div>
+        <div class="ps copyright">Illustrations by Krzysztof Nowak</div>
+        <div class="ps">
+            <p> Veniam, quos harum quisquam assumenda dolorem perspiciatis, voluptas, ad distinctio esse quis cupiditate placeat? A veritatis unde, ad ea odit magni! Nostrum optio fugiat veritatis hic, veniam, sapiente voluptatem tempore nam ipsam perspiciatis, error cupiditate! Magnam laboriosam, optio adipisci odio non aliquam commodi.</p>
+        </div>
+    </div>
+    
+</body>    
+    
+</html>
